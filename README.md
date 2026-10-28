@@ -1,4 +1,4 @@
-# 🚀 СРО: Деплой веб-сайта — Docker, Cloudflare Tunnel и AWS S3
+#  СРО: Деплой веб-сайта - Docker, Cloudflare Tunnel и AWS S3
 
 Учебный проект: один и тот же статический сайт разворачивается тремя способами.
 
@@ -193,7 +193,7 @@ CLI: `aws s3 rm s3://NAME --recursive && aws s3 rb s3://NAME` (`scripts/aws-clea
 
 ---
 
-## ⚖️ Сравнение способов
+##  Сравнение способов
 
 | | Docker (локально) | Cloudflare Tunnel | AWS S3 |
 |---|---|---|---|
@@ -204,10 +204,6 @@ CLI: `aws s3 rm s3://NAME --recursive && aws s3 rb s3://NAME` (`scripts/aws-clea
 | Динамика (бэкенд, БД) | ✅ | ✅ | ❌ только статика |
 | Стоимость | бесплатно | бесплатно | Free Tier / копейки |
 
-## 🛠 Стек
+##  Стек
 
 Kali Linux · Docker · Nginx (alpine) · Cloudflare Tunnel (`cloudflared`) · AWS S3 · AWS CLI
-
-## 👤 Автор
-
-**Алихан Лютов**
