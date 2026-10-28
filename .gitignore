@@ -1,0 +1,13 @@
+# Бинарник cloudflared скачивается отдельно, в репозиторий не кладём
+cloudflared
+cloudflared-*
+
+# Ключи и секреты AWS — никогда не коммитим
+.aws/
+*.pem
+*.key
+.env
+
+# Системный мусор
+.DS_Store
+Thumbs.db

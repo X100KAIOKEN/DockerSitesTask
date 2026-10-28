@@ -1,0 +1,12 @@
+# Альтернатива команде `docker run` — тот же контейнер, но описан в файле.
+# Запуск:   docker compose up -d
+# Остановка: docker compose down
+services:
+  web:
+    image: nginx:alpine
+    container_name: sro-nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ./index.html:/usr/share/nginx/html/index.html:ro
+    restart: unless-stopped
